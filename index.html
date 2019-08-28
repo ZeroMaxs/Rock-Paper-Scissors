@@ -1,0 +1,35 @@
+<script>
+let computerPlay = function () {
+    num = Math.floor(Math.random() * 3)
+if(num = 0) {
+    return "Rock"
+} else if (num = 1) {
+    return "Paper"
+} else {return "Scissors"}
+};
+let determineRounds = function (playerSelection, computerSelection){
+    playerSelection.toLowerCase()
+    if(playerSelection == "rock" && computerSelection == "Scissors"){
+        return "The player is triumphant"
+    }
+    else if (playerSelection == "rock" && computerSelection == "Paper"){
+        return "You sit beneth the king, for you have lost this round."
+    }
+    else if (playerSelection == "paper" && computerSelection == "Scissiors"){
+        return "The king once again slices your paper."
+    }
+    else if (playerSelection == "paper" && computerSelection == "Rock" ){
+        return "The king lost this round for your Paper has covered the boulder."
+    }
+    else if (playerSelection == "scissors" && computerSelection == "Paper"){
+        return "You have snipped the king of their paper."
+    }
+    else if (playerSelection == "scissors" && computerSelection == "Rock") {
+        return "For the rock has destroyed the scissor"
+    } else {return "It's a Tie!" }
+};
+
+let game = function () {
+
+};
+</script>
